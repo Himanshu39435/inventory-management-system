@@ -23,11 +23,12 @@ const ForgotPassword = () => {
     }
     setLoading(true);
     try {
-      const res = await axios.post(`${apiUrl}/api/auth/reset-password`, {
-        username,
-        oldPassword,
-        newPassword,
-      });
+      await axios.post(`${apiUrl}/api/auth/reset-password`, {
+  username,
+  oldPassword,
+  newPassword,
+});
+
       message.success('Password updated successfully. Please log in with your new password.');
       navigate('/login');
     } catch (err) {
