@@ -1,7 +1,7 @@
 // routes/analytics.js
 const express = require('express');
 const router = express.Router();
-const Log = require('../models/Log');
+const Log = require('../models/log');
 const StockHistory = require('../models/StockHistory');
 const Item = require('../models/Item');
 const Warehouse = require('../models/Warehouse');
