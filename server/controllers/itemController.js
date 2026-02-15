@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const Item = require('../models/Item');
-const Log = require('../models/Log'); // Assuming a Log model is created
+const Log = require('../models/log'); // Assuming a Log model is created
 const createCsvWriter = require('csv-writer').createObjectCsvStringifier;
 
 const getItems = async (req, res) => {
