@@ -1,6 +1,6 @@
 // server/controllers/forecastController.js
 const mongoose = require('mongoose');
-const Log = require('../models/Log');
+const Log = require('../models/log');
 const Item = require('../models/Item');
 
 exports.getDemandForecast = async (req, res) => {
